@@ -1,0 +1,26 @@
+{
+  "name": "final-project-aaron",
+  "version": "1.0.0",
+  "description": "Final project chat application",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "node_modules/handlebars/bin/handlebars views/partials/post.handlebars -f public/post.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-f21/final-project-aaron.git"
+  },
+  "author": "Aaron Jobe and Michelle Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-f21/final-project-aaron/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-f21/final-project-aaron#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "handlebars": "^4.7.7"
+  }
+}

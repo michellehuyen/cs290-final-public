@@ -1,0 +1,20 @@
+<div class="row post">
+    <div class="col-md-8 offset-md-2">
+        <div class="form-group">
+            <span class="border border-light">
+                <p>{{text}}</p><p><a href="#" class="float-right bi bi-reply reply"><i class="fa fa-reply"></i>reply</a></p>
+            </span>
+            <div class="replyBox container d-none">
+                <div class="card-body"> 
+                    <label for="reply-text" class="col-form-label">Enter your response here:</label>
+                    <textarea class="form-control reply-text"></textarea>
+                    <button type="button" class="btn btn-secondary close-button">Close</button>
+                    <button type="button" class="btn btn-primary reply-button">Comment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{#each children}}
+    {{> comment}}
+{{/each}}
